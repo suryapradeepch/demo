@@ -1,0 +1,10 @@
+matrix:
+  include:
+    -  language: c
+       sudo: false # only for the faster buuilds
+       compiler:
+          - clang
+          - gcc
+       script:
+          - gcc -o test dem.c
+          - ./test
