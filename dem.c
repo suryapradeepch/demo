@@ -8,7 +8,7 @@ int main()
     printf("Enter the size of the array: ");
     scanf("%d", &n);
 
-    p = (int*)calloc(n, sizeof(int));
+    *p = (int*)calloc(n, sizeof(int));
 
     if(p==NULL)
     {
